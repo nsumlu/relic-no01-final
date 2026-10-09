@@ -20,7 +20,7 @@
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav class="nav" id="nav" aria-label="Primary">
     <a href="#object">Object</a>
-    <a href="#anatomy">Anatomy</a>
+    <a href="#context">In Context</a>
     <a href="#materials">Materials</a>
     <a href="#process">Process</a>
     <button class="nav__enq" type="button" data-enquire>Enquire</button>
@@ -89,28 +89,31 @@
   </div>
 </section>
 
-<!-- 05 · anatomy -->
-<section class="anatomy" id="anatomy" aria-labelledby="ana-h">
-  <div class="grid anatomy__head">
-    <p class="meta">Anatomy / 01</p>
-    <h2 class="headline" id="ana-h">Built through relationships.</h2>
-    <p class="copy">Each component is distinct, but the identity of RELIC exists in the way they meet.</p>
+<!-- 05 · in context -->
+<section class="context" id="context" aria-labelledby="context-h">
+  <div class="grid context__head">
+    <p class="meta">In context</p>
+    <h2 class="headline" id="context-h">Made to live with light.</h2>
+    <p class="copy">From quiet domestic interiors to gallery settings, RELIC No.01 shifts between functional light and sculptural presence.</p>
   </div>
-  <figure class="plate">
-    <button class="plate__btn" type="button" data-zoom="assets/img/relic-anatomy-board.webp" data-alt="Anatomy board: exploded view of RELIC No.01 with leader lines to each component, and a macro detail of the bronze frame." aria-label="Inspect the anatomy board at full resolution">
-      <img src="assets/img/relic-anatomy-board.webp" srcset="assets/img/relic-anatomy-board-900.webp 900w, assets/img/relic-anatomy-board.webp 1491w" sizes="100vw" width="1491" height="1055" alt="Anatomy board: exploded view of RELIC No.01 showing the upper chimney, metal support, lower crystal and candle holder, with a macro detail of the bronze frame." loading="lazy" decoding="async">
-      <span class="zoom__hint" aria-hidden="true">Inspect</span>
-    </button>
-    <figcaption class="plate__cap grid">
-      <span class="meta">Plate 01 / Anatomy</span>
-      <ol class="plate__parts" aria-label="Components">
-        <li><i>01</i>Upper Glass Chimney</li>
-        <li><i>02</i>Inner Light Holder</li>
-        <li><i>03</i>Crystal Element</li>
-        <li><i>04</i>Sculptural Metal Frame</li>
-      </ol>
-    </figcaption>
-  </figure>
+
+  <div class="context__gallery">
+    <figure class="context__hero">
+      <img src="assets/img/relic-home-console.jpg" alt="RELIC No.01 glowing on a wooden console beside red roses in a warm domestic interior." loading="lazy" decoding="async">
+      <figcaption><span>01</span> Domestic / Console</figcaption>
+    </figure>
+
+    <div class="grid context__pair">
+      <figure class="context__domestic">
+        <img src="assets/img/relic-home-desk.jpg" alt="RELIC No.01 on a wooden desk beside a chair and open book in late-afternoon window light." loading="lazy" decoding="async">
+        <figcaption><span>02</span> Domestic / Afternoon</figcaption>
+      </figure>
+      <figure class="context__gallery-shot">
+        <img src="assets/img/relic-gallery.jpg" alt="RELIC No.01 presented on a pale stone plinth in a minimal contemporary gallery." loading="lazy" decoding="async">
+        <figcaption><span>03</span> Gallery / Object</figcaption>
+      </figure>
+    </div>
+  </div>
 </section>
 
 <!-- 06 · materials -->
@@ -289,7 +292,7 @@
     </div>
     <nav class="footer__links" aria-label="Footer">
       <a href="object/relic-01/">Object</a>
-      <a href="#anatomy">Anatomy</a>
+      <a href="#context">In Context</a>
       <a href="#materials">Materials</a>
       <a href="#process">Process</a>
       <button type="button" data-enquire>Contact</button>
