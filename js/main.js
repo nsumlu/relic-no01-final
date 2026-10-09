@@ -8,7 +8,7 @@
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
 
   // Replace with the real enquiries address before launch.
-  const ENQUIRY_EMAIL = 'enquiries@example.com';
+  const ENQUIRY_EMAIL = 'nsumlu@hotmail.com';
 
   /* ---------------- header + mobile menu ---------------- */
   const header = $('.header');
