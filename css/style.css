@@ -727,3 +727,75 @@ body.menu-open .header.is-light .menu-btn { opacity: 1; }
   .origin__sketch-cap .meta,
   .origin__sketch-cap p { grid-column: 1 / -1; }
 }
+
+
+/* origin layout refinement — text + sketches side by side */
+.origin {
+  padding-block: clamp(90px, 11vw, 160px);
+}
+.origin__layout {
+  align-items: center;
+}
+.origin__text {
+  grid-column: 2 / span 5;
+}
+.origin__text .meta {
+  margin-bottom: 2rem;
+}
+.origin__text .origin__campaign {
+  margin-bottom: clamp(28px, 4vw, 54px);
+}
+.origin__text .headline {
+  font-size: clamp(2.6rem, 5.1vw, 5.6rem);
+}
+.origin__text .origin__copy {
+  margin-top: clamp(36px, 5vw, 68px);
+  padding-top: 18px;
+  border-top: 1px solid var(--ink);
+  max-width: 38ch;
+}
+.origin__sketch {
+  grid-column: 8 / span 4;
+  margin: 0;
+  width: 100%;
+  justify-self: end;
+}
+.origin__sketch-btn {
+  border: 0;
+  background: transparent;
+}
+.origin__sketch-btn img {
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+}
+.origin__sketch .zoom__hint {
+  right: 10px;
+  bottom: 10px;
+  padding: 6px 10px;
+  font-size: .58rem;
+}
+.origin__sketch-cap {
+  margin-top: 14px;
+}
+.origin__sketch-cap .meta {
+  display: block;
+  margin: 0 0 6px;
+}
+.origin__sketch-cap p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: .78rem;
+  line-height: 1.5;
+  max-width: 34ch;
+}
+@media (max-width: 1000px) {
+  .origin__text { grid-column: 1 / span 6; }
+  .origin__sketch { grid-column: 8 / -1; }
+}
+@media (max-width: 820px) {
+  .origin__text,
+  .origin__sketch { grid-column: 1 / -1; }
+  .origin__sketch { margin-top: 48px; width: min(82vw, 520px); justify-self: center; }
+  .origin__sketch-btn img { max-width: none; }
+}
