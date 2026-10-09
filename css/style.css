@@ -799,3 +799,99 @@ body.menu-open .header.is-light .menu-btn { opacity: 1; }
   .origin__sketch { margin-top: 48px; width: min(82vw, 520px); justify-self: center; }
   .origin__sketch-btn img { max-width: none; }
 }
+
+
+/* ---------- in context ---------- */
+.context {
+  padding-block: clamp(110px, 15vw, 230px);
+}
+.context__head {
+  align-items: end;
+  margin-bottom: clamp(52px, 7vw, 100px);
+}
+.context__head .meta {
+  grid-column: 2 / -1;
+  margin-bottom: 2.2rem;
+}
+.context__head .headline {
+  grid-column: 2 / span 7;
+}
+.context__head .copy {
+  grid-column: 9 / span 3;
+}
+.context__gallery {
+  overflow: hidden;
+}
+.context__gallery figure {
+  margin: 0;
+}
+.context__gallery img {
+  width: 100%;
+  display: block;
+}
+.context__hero {
+  width: min(100% - (var(--m) * 2), 1500px);
+  margin-inline: auto !important;
+}
+.context__hero img {
+  aspect-ratio: 16 / 8.2;
+  object-fit: cover;
+}
+.context__gallery figcaption {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+  font-size: .62rem;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+.context__gallery figcaption span {
+  color: var(--bronze);
+}
+.context__pair {
+  align-items: start;
+  padding-top: clamp(72px, 10vw, 150px);
+}
+.context__domestic {
+  grid-column: 1 / span 7;
+}
+.context__gallery-shot {
+  grid-column: 9 / span 4;
+  padding-top: clamp(56px, 8vw, 120px);
+}
+.context__domestic img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.context__gallery-shot img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+@media (max-width: 820px) {
+  .context__head .meta,
+  .context__head .headline,
+  .context__head .copy {
+    grid-column: 1 / -1;
+  }
+  .context__head .copy {
+    margin-top: 1.5rem;
+  }
+  .context__hero {
+    width: 100%;
+  }
+  .context__hero figcaption {
+    padding-inline: var(--m);
+  }
+  .context__hero img {
+    aspect-ratio: 4 / 3;
+  }
+  .context__domestic,
+  .context__gallery-shot {
+    grid-column: 1 / -1;
+    padding-top: 0;
+  }
+  .context__gallery-shot {
+    margin-top: 48px !important;
+  }
+}
