@@ -690,3 +690,40 @@ body.menu-open .header.is-light .menu-btn { opacity: 1; }
   .origin__copy { grid-column: 1 / -1; }
   .origin__copy { margin-top: 48px; }
 }
+
+
+.origin__sketch {
+  margin-top: clamp(64px, 9vw, 140px);
+  margin-inline: 0;
+}
+.origin__sketch-btn {
+  display: block;
+  width: 100%;
+  position: relative;
+  cursor: zoom-in;
+  background: #FBF8F3;
+  border-block: 1px solid var(--line);
+}
+.origin__sketch-btn img {
+  width: min(100%, 1500px);
+  margin-inline: auto;
+}
+.origin__sketch-cap {
+  align-items: baseline;
+  row-gap: 12px;
+  padding-top: 18px;
+}
+.origin__sketch-cap .meta { grid-column: 2 / span 4; margin: 0; }
+.origin__sketch-cap p {
+  grid-column: 8 / span 4;
+  color: var(--ink-2);
+  font-size: .86rem;
+  line-height: 1.55;
+  max-width: 36ch;
+}
+@media (max-width: 820px) {
+  .origin { padding-bottom: 96px; }
+  .origin__sketch { margin-top: 56px; }
+  .origin__sketch-cap .meta,
+  .origin__sketch-cap p { grid-column: 1 / -1; }
+}
